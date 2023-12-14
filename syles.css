@@ -16,7 +16,7 @@ section.hero {
   } 
   
   .hero_bg {
-    background-image: url(./Images/hardworkingpersona.png);
+    background-image: url(./Images/hardworkingpersonapfp.png);
     background-size: cover; 
     position: absolute;
     height: 100%;
@@ -36,6 +36,8 @@ section.hero {
     font-style: italic;
     z-index: 10;
   }
+
+  /* Will work on Main later */
 
   /* Header will be sticky and stay at the top once you scroll past the hero section */
   header {
@@ -71,12 +73,12 @@ section.hero {
   
   /*Temp. margins for all sections to avoid overlap and improve readbility while I style in Figma*/
   section.pitch {
-    background-color: #A7CCED;
+    background-color: #6C8DAD;
   }
 
   section.pitch article {
     margin-left: 15px;
-    padding: 10px;
+    color: antiquewhite;
   }
 
   /* Will align image to the left of the text as shown in figma */
@@ -86,30 +88,47 @@ section.hero {
     margin: 25px;
   }
 
+  /* Icons get stretched and some need resizing. */
   section.skills {
-    background-color: #82A0BC;
+    padding: 20px;
+    background-color: #6C8DAD;
   } 
-  /* Some logos are not transparent because I couldn't find them in Figma. Will be fixed. */
+ 
 
   section.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
     background-color: #6C8DAD;
   }
 
-  div.project_card {
+
+  .project_card {
+    height: 300px;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 10px;
+    text-align: center;
     margin-left: 15px;
     color: antiquewhite;
+    text-decoration: none;
   }
 
   footer {
-    height: 130px;
+    height: 150px;
     background-color: #545E75;
   }
   
   .footer-details{
     margin-left: 15px;
-    padding: 10px;
     color: antiquewhite;
     text-decoration: none;
+  }
+
+  .footer-details p{
+    padding: 10px;
   }
 
   .footer-details a {
