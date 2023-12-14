@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Will style in figma and import if possible. Most CSS styling here is temporary and all images are placeholders. Font style not decided*/
+
+/*Borrowed and adjusted temp. Hero code to show the layout*/
+section.hero {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    min-height: 100vh;
+  } 
+  
+  .hero_bg {
+    background-image: url(./Images/hardworkingpersona.png);
+    background-size: cover; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 80%;
+  }
+  
+  /*The postion of h1 and h2 will be adjusted once the hero-bg image is completed and I know where it would fit best*/
+  .hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    z-index: 10;
+  }
+
+  .hero h2 {
+    font-size: 40px;
+    font-style: italic;
+    z-index: 10;
+  }
+
+  /* Header will be sticky and stay at the top once you scroll past the hero section */
+  header {
+    height: 80px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #304D6D;
+  }
+  
+  header figure {
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+  }
+  
+  img.logo {
+    height: 100%;
+    width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    gap: 25px;
+  }
+  
+  nav a {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+
+  
+  /*Temp. margins for all sections to avoid overlap and improve readbility while I style in Figma*/
+  section.pitch {
+    background-color: #A7CCED;
+  }
+
+  section.pitch article {
+    margin-left: 15px;
+    padding: 10px;
+  }
+
+  /* Will align image to the left of the text as shown in figma */
+  section.pitch article img {
+    height: 200px;
+    width: 200px;
+    margin: 25px;
+  }
+
+  section.skills {
+    background-color: #82A0BC;
+  } 
+  /* Some logos are not transparent because I couldn't find them in Figma. Will be fixed. */
+
+  section.projects {
+    background-color: #6C8DAD;
+  }
+
+  div.project_card {
+    margin-left: 15px;
+    color: antiquewhite;
+  }
+
+  footer {
+    height: 130px;
+    background-color: #545E75;
+  }
+  
+  .footer-details{
+    margin-left: 15px;
+    padding: 10px;
+    color: antiquewhite;
+    text-decoration: none;
+  }
+
+  .footer-details a {
+    color: antiquewhite;
+    text-decoration: none;
+  }
