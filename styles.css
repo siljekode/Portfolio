@@ -1,3 +1,4 @@
+/* Temporary font? */
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 
 /* No media queries yet, I simply needed to get something done. */
@@ -11,7 +12,7 @@
 
 /* Will style in figma and import if possible. I know Figma doesn't have Grid. Most CSS styling here is temporary and all images are placeholders. */ 
 
-section.hero {
+  .hero {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -28,7 +29,7 @@ section.hero {
     opacity: 100%;
   }
   
-  /* The postion of h1 and h2 will be adjusted once the hero-bg image is completed and I know where it would fit best */
+  /* The positions of h1 and h2 will be adjusted once the hero-bg image is completed and I know where and how it would fit best */
   /* .hero h1 {
     font-size: 60px;
     font-weight: bold;
@@ -46,13 +47,14 @@ section.hero {
     background-color:#6C8DAD;
   }
 
-  /* Header will be sticky and stay at the top once you scroll past the hero section. */
   header {
     height: 80px;
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0%;
     background-color: #304D6D;
   }
   
@@ -78,18 +80,19 @@ section.hero {
     text-decoration: none;
   }
 
-  /*Temp. margins for all sections to avoid overlap and improve readbility while I style in Figma. */
+  /*Temp. margins and padding for all sections to avoid overlap and improve readbility while I style in Figma. */
 
-  section.pitch h2 {
-    font-size: 30px;
-  }
-
-  section.pitch {
+  .pitch {
+    min-height: calc(100vh-80px); 
     font-size: 18px;
     line-height: 30px;
   }
 
-  section.pitch article {
+  .pitch h2 {
+    font-size: 30px;
+  }
+
+  .pitch article {
     margin-left: 50px;
     padding: 20px;
     font-weight: bold;
@@ -97,19 +100,19 @@ section.hero {
   }
 
   /* Will align image to the left of the text as shown in figma */
-  section.pitch article img {
+  .pitch article img {
     height: 200px;
     width: 200px;
   }
 
-  /* Icons get stretched when flexed. Will be resized and flexed side by side in two divs later anyways so leaving it for now */
-  section.skills {
+  /* Will be resized and flexed side by side in two divs later so I'm leaving them for now */
+  .skills {
     margin: 30px;
     gap: 5px;
     padding: 20px;
   } 
  
-  section.projects {
+  .projects {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -117,6 +120,7 @@ section.hero {
     padding: 70px;
   }
 
+  /* Will add effects, not sure what type I want yet but probably a hover. */
   .project_card {
     height: 300px;
     min-width: 200px;
@@ -128,6 +132,7 @@ section.hero {
     color: antiquewhite;
   }
 
+  /* Is it possible to get rid of the underlined text here? Textstyle does nothing*/
   .project_card p {
     font-size: 16px;
     color: antiquewhite;
@@ -150,5 +155,7 @@ section.hero {
 
   .footer-details a {
     color: antiquewhite;
-    text-decoration: none;
+    text-decoration: underline;
   }
+
+  
